@@ -6,7 +6,7 @@ RUN easy_install pip && pip install boto
 RUN wget --no-check-certificate -O /seafile/seafile-pro-server_5.1.3_x86-64.tar.gz "https://cloud.seafile.de/seafhttp/files/3ba02ceb-67bb-43b8-9c4d-07fe8af8ab3f/seafile-pro-server_5.1.3_x86-64.tar.gz"
 RUN cd /seafile && tar -xf seafile-pro-server_5.1.3_x86-64.tar.gz
 RUN mv /seafile/seafile-pro-server_5.1.3_x86-64.tar.gz /seafile/installed/seafile-pro-server_5.1.3_x86-64.tar.gz
-RUN ln -s /seafile/seafile-pro-server_5.1.3 /seafile/seafile-server-latest
+RUN ln -s /seafile/seafile-pro-server-5.1.3 /seafile/seafile-server-latest
 
 
 # install Supervisord
