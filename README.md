@@ -4,6 +4,7 @@
 setup-seafile-mysql.sh
 
 ## start
+```sh
 docker run -d --name seafile \
 --link mysql:mysql \
 -p 127.0.0.1:8000:8000 \
@@ -14,3 +15,4 @@ docker run -d --name seafile \
 -v /opt/conf/seafile/conf/:/seafile/conf \
 -v /opt/conf/seafile/ccnet/:/seafile/ccnet \
 seafile
+```
